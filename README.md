@@ -15,13 +15,14 @@ Display a simple terminal banner.
 * Banner Title
 * Themes
 * Padding
+* Margin
 * Configurable border symbols
 * Configurable background symbols
 
 ## Example
 
 ```python
-from banner import Banner
+from simple_terminal_banner import Banner
 
 banner = Banner("Hello, World!")
 banner.display()
@@ -35,4 +36,87 @@ Produces:
 * Hello, World!                        *
 *                                      *
 ****************************************
+```
+
+## Titles
+
+```
+banner.title = "Banner Example"
+```
+Produces:
+```
+** Banner Example **********************
+*                                      *
+* Hello, World!                        *
+*                                      *
+****************************************
+```
+
+## Padding
+
+### Title Padding
+
+```
+banner.title_padding = 4
+```
+
+Produces:
+
+```
+**    Banner Example    ****************
+*                                      *
+* Hello, World!                        *
+*                                      *
+****************************************
+```
+
+### Content Padding
+
+```
+banner.padding_top = 4
+```
+
+Produces:
+
+```
+**    Banner Example    ****************
+*                                      *
+*                                      *
+*                                      *
+*                                      *
+* Hello, World!                        *
+*                                      *
+****************************************
+```
+
+## Configurable Symbols
+
+### Border Symbols
+
+```
+banner.border_symbol = "="
+```
+
+Produces:
+
+```
+==    Banner Example    ================
+=                                      =
+=                                      =
+=                                      =
+=                                      =
+= Hello, World!                        =
+=                                      =
+========================================
+```
+
+### Background Symbols
+
+```
+banner.background_symbol = "."
+```
+
+Produces:
+
+```
 ```

@@ -1,4 +1,9 @@
-from banner import Banner, BannerThemes
+from simple_terminal_banner import Banner, BannerThemes
+
+
+b = Banner()
+b.title = "Hello, World!"
+b.display()
 
 # create a simple banner showing the easiest possible
 # way to have a quick and easy banner message displayed
@@ -61,7 +66,7 @@ no_border_banner = Banner()
 no_border_banner.theme("none")
 no_border_banner.title = "No Border, Margin or Padding, wrapped"
 no_border_banner.width = 40
-no_border_banner.add_row("Hello, World! This is the way you introduce most code examples in tutorials. It came from a book about C in the 1980s, but it's become a meme.")  
+no_border_banner.add_row("Hello, World! This is the way you introduce most code examples in tutorials. It came from a book about C in the 1980s, but it's become a meme.")
 no_border_banner.display()
 
 no_border_banner.set_wrap(False)
@@ -73,5 +78,5 @@ no_padding_banner.width = 40
 no_padding_banner.padding_left = 2
 no_padding_banner.padding_right = 2
 no_padding_banner.margin_bottom = 1
-no_padding_banner.add_row("Hello, World! This is the way you introduce most code examples in tutorials. It came from a book about C in the 1980s, but it's become a meme.")  
+no_padding_banner.add_row("Hello, World! This is the way you introduce most code examples in tutorials. It came from a book about C in the 1980s, but it's become a meme.")
 no_padding_banner.display()

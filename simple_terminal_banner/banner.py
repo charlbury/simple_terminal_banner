@@ -48,7 +48,8 @@ class Banner:
             for row in self._rows:
                 print(row)
         else:
-            print(self._line(self.message))
+            if self.message:
+                print(self._line(self.message))
         print(self._create_padding_bottom())
         print(self._separator())
         if self.margin_bottom > 0: print(self._create_margin_bottom())
