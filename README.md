@@ -1,5 +1,7 @@
 # Simple Terminal Banner
 
+![Build Status](https://github.com/charlbury/simple_terminal_banner/actions/workflows/python-package.yml/badge.svg)
+
 ```
 ** Simple Terminal Banner **************
 *                                      *
