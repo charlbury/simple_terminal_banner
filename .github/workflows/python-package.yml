@@ -1,4 +1,3 @@
-// filepath: /Users/sjg/tmp/simple_terminal_banner/.github/workflows/python-package.yml
 name: Python package
 
 on:
